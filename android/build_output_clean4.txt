@@ -1,0 +1,227 @@
+> Task :gradle-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:jar UP-TO-DATE
+> Task :gradle-plugin:inspectClassesForKotlinIC UP-TO-DATE
+
+> Configure project :react-native-reanimated
+Android gradle plugin: 8.1.1
+Gradle: 8.3
+
+> Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+> Task :app:generateCodegenArtifactsFromSchema SKIPPED
+> Task :app:generatePackageList
+> Task :app:preBuild
+> Task :app:preDebugBuild
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-aes-crypto:preBuild UP-TO-DATE
+> Task :react-native-aes-crypto:preDebugBuild UP-TO-DATE
+> Task :react-native-aes-crypto:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-async-storage_async-storage:preBuild UP-TO-DATE
+> Task :react-native-async-storage_async-storage:preDebugBuild UP-TO-DATE
+> Task :react-native-async-storage_async-storage:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-blob-util:preBuild UP-TO-DATE
+> Task :react-native-blob-util:preDebugBuild UP-TO-DATE
+> Task :react-native-blob-util:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-community_netinfo:preBuild UP-TO-DATE
+> Task :react-native-community_netinfo:preDebugBuild UP-TO-DATE
+> Task :react-native-community_netinfo:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-community_slider:preBuild UP-TO-DATE
+> Task :react-native-community_slider:preDebugBuild UP-TO-DATE
+> Task :react-native-community_slider:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-fast-image:preBuild UP-TO-DATE
+> Task :react-native-fast-image:preDebugBuild UP-TO-DATE
+> Task :react-native-fast-image:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-fs:preBuild UP-TO-DATE
+> Task :react-native-fs:preDebugBuild UP-TO-DATE
+> Task :react-native-fs:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-gesture-handler:preBuild UP-TO-DATE
+> Task :react-native-gesture-handler:preDebugBuild UP-TO-DATE
+> Task :react-native-gesture-handler:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-haptic-feedback:preBuild UP-TO-DATE
+> Task :react-native-haptic-feedback:preDebugBuild UP-TO-DATE
+> Task :react-native-haptic-feedback:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-keep-awake:preBuild UP-TO-DATE
+> Task :react-native-keep-awake:preDebugBuild UP-TO-DATE
+> Task :react-native-keep-awake:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-linear-gradient:preBuild UP-TO-DATE
+> Task :react-native-linear-gradient:preDebugBuild UP-TO-DATE
+> Task :react-native-linear-gradient:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-reanimated:assertLatestReactNativeWithNewArchitectureTask SKIPPED
+> Task :react-native-reanimated:assertMinimalReactNativeVersionTask SKIPPED
+> Task :react-native-reanimated:prepareHeadersForPrefab UP-TO-DATE
+> Task :react-native-reanimated:preBuild UP-TO-DATE
+> Task :react-native-reanimated:preDebugBuild UP-TO-DATE
+> Task :react-native-reanimated:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-safe-area-context:preBuild UP-TO-DATE
+> Task :react-native-safe-area-context:preDebugBuild UP-TO-DATE
+> Task :react-native-safe-area-context:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-screens:preBuild UP-TO-DATE
+> Task :react-native-screens:preDebugBuild UP-TO-DATE
+> Task :react-native-screens:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-track-player:preBuild UP-TO-DATE
+> Task :react-native-track-player:preDebugBuild UP-TO-DATE
+> Task :react-native-track-player:writeDebugAarMetadata UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :react-native-aes-crypto:generateDebugResValues UP-TO-DATE
+> Task :react-native-aes-crypto:generateDebugResources UP-TO-DATE
+> Task :react-native-aes-crypto:packageDebugResources UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateDebugResValues UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateDebugResources UP-TO-DATE
+> Task :react-native-async-storage_async-storage:packageDebugResources UP-TO-DATE
+> Task :react-native-blob-util:generateDebugResValues UP-TO-DATE
+> Task :react-native-blob-util:generateDebugResources UP-TO-DATE
+> Task :react-native-blob-util:packageDebugResources UP-TO-DATE
+> Task :react-native-community_netinfo:generateDebugResValues UP-TO-DATE
+> Task :react-native-community_netinfo:generateDebugResources UP-TO-DATE
+> Task :react-native-community_netinfo:packageDebugResources UP-TO-DATE
+> Task :react-native-community_slider:generateDebugResValues UP-TO-DATE
+> Task :react-native-community_slider:generateDebugResources UP-TO-DATE
+> Task :react-native-community_slider:packageDebugResources UP-TO-DATE
+> Task :react-native-fast-image:generateDebugResValues UP-TO-DATE
+> Task :react-native-fast-image:generateDebugResources UP-TO-DATE
+> Task :react-native-fast-image:packageDebugResources UP-TO-DATE
+> Task :react-native-fs:generateDebugResValues UP-TO-DATE
+> Task :react-native-fs:generateDebugResources UP-TO-DATE
+> Task :react-native-fs:packageDebugResources UP-TO-DATE
+> Task :react-native-gesture-handler:generateDebugResValues UP-TO-DATE
+> Task :react-native-gesture-handler:generateDebugResources UP-TO-DATE
+> Task :react-native-gesture-handler:packageDebugResources UP-TO-DATE
+> Task :react-native-haptic-feedback:generateDebugResValues UP-TO-DATE
+> Task :react-native-haptic-feedback:generateDebugResources UP-TO-DATE
+> Task :react-native-haptic-feedback:packageDebugResources UP-TO-DATE
+> Task :react-native-keep-awake:generateDebugResValues UP-TO-DATE
+> Task :react-native-keep-awake:generateDebugResources UP-TO-DATE
+> Task :react-native-keep-awake:packageDebugResources UP-TO-DATE
+> Task :react-native-linear-gradient:generateDebugResValues UP-TO-DATE
+> Task :react-native-linear-gradient:generateDebugResources UP-TO-DATE
+> Task :react-native-linear-gradient:packageDebugResources UP-TO-DATE
+> Task :react-native-reanimated:generateDebugResValues UP-TO-DATE
+> Task :react-native-reanimated:generateDebugResources UP-TO-DATE
+> Task :react-native-reanimated:packageDebugResources UP-TO-DATE
+> Task :react-native-safe-area-context:generateDebugResValues UP-TO-DATE
+> Task :react-native-safe-area-context:generateDebugResources UP-TO-DATE
+> Task :react-native-safe-area-context:packageDebugResources UP-TO-DATE
+> Task :react-native-screens:generateDebugResValues UP-TO-DATE
+> Task :react-native-screens:generateDebugResources UP-TO-DATE
+> Task :react-native-screens:packageDebugResources UP-TO-DATE
+> Task :react-native-track-player:generateDebugResValues UP-TO-DATE
+> Task :react-native-track-player:generateDebugResources UP-TO-DATE
+> Task :react-native-track-player:packageDebugResources UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-aes-crypto:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-aes-crypto:processDebugManifest UP-TO-DATE
+> Task :react-native-async-storage_async-storage:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-async-storage_async-storage:processDebugManifest UP-TO-DATE
+> Task :react-native-blob-util:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-blob-util:processDebugManifest UP-TO-DATE
+> Task :react-native-community_netinfo:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-community_netinfo:processDebugManifest UP-TO-DATE
+> Task :react-native-community_slider:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-community_slider:processDebugManifest UP-TO-DATE
+> Task :react-native-fast-image:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-fast-image:processDebugManifest UP-TO-DATE
+> Task :react-native-fs:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-fs:processDebugManifest UP-TO-DATE
+> Task :react-native-gesture-handler:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-gesture-handler:processDebugManifest UP-TO-DATE
+> Task :react-native-haptic-feedback:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-haptic-feedback:processDebugManifest UP-TO-DATE
+> Task :react-native-keep-awake:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-keep-awake:processDebugManifest UP-TO-DATE
+> Task :react-native-linear-gradient:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-linear-gradient:processDebugManifest UP-TO-DATE
+> Task :react-native-reanimated:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-reanimated:processDebugManifest UP-TO-DATE
+> Task :react-native-safe-area-context:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-safe-area-context:processDebugManifest UP-TO-DATE
+> Task :react-native-screens:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-screens:processDebugManifest UP-TO-DATE
+> Task :react-native-track-player:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-track-player:processDebugManifest UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :react-native-aes-crypto:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-aes-crypto:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-aes-crypto:generateDebugRFile UP-TO-DATE
+> Task :react-native-async-storage_async-storage:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-async-storage_async-storage:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateDebugRFile UP-TO-DATE
+> Task :react-native-blob-util:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-blob-util:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-blob-util:generateDebugRFile UP-TO-DATE
+> Task :react-native-community_netinfo:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-community_netinfo:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-community_netinfo:generateDebugRFile UP-TO-DATE
+> Task :react-native-community_slider:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-community_slider:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-community_slider:generateDebugRFile UP-TO-DATE
+> Task :react-native-fast-image:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-fast-image:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-fast-image:generateDebugRFile UP-TO-DATE
+> Task :react-native-fs:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-fs:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-fs:generateDebugRFile UP-TO-DATE
+> Task :react-native-gesture-handler:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-gesture-handler:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-gesture-handler:generateDebugRFile UP-TO-DATE
+> Task :react-native-haptic-feedback:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-haptic-feedback:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-haptic-feedback:generateDebugRFile UP-TO-DATE
+> Task :react-native-keep-awake:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-keep-awake:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-keep-awake:generateDebugRFile UP-TO-DATE
+> Task :react-native-linear-gradient:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-linear-gradient:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-linear-gradient:generateDebugRFile UP-TO-DATE
+> Task :react-native-reanimated:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-reanimated:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-reanimated:generateDebugRFile UP-TO-DATE
+> Task :react-native-safe-area-context:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-safe-area-context:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-safe-area-context:generateDebugRFile UP-TO-DATE
+> Task :react-native-screens:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-screens:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-screens:generateDebugRFile UP-TO-DATE
+> Task :react-native-track-player:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-track-player:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-track-player:generateDebugRFile UP-TO-DATE
+> Task :react-native-aes-crypto:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-aes-crypto:javaPreCompileDebug UP-TO-DATE
+> Task :app:processDebugResources
+> Task :react-native-aes-crypto:compileDebugJavaWithJavac FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':react-native-aes-crypto:compileDebugJavaWithJavac'.
+> Could not resolve all files for configuration ':react-native-aes-crypto:androidJdkImage'.
+   > Failed to transform core-for-system-modules.jar to match attributes {artifactType=_internal_android_jdk_image, org.gradle.libraryelements=jar, org.gradle.usage=java-runtime}.
+      > Execution failed for JdkImageTransform: C:\Users\rlope\AppData\Local\Android\Sdk\platforms\android-34\core-for-system-modules.jar.
+         > Error while executing process C:\Program Files\Android\openjdk\jdk-21.0.8\bin\jlink.exe with arguments {--module-path C:\Users\rlope\.gradle\caches\transforms-3\a27b291289be24252d7ea2645fd35f6f\transformed\output\temp\jmod --add-modules java.base --output C:\Users\rlope\.gradle\caches\transforms-3\a27b291289be24252d7ea2645fd35f6f\transformed\output\jdkImage --disable-plugin system-modules}
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 13s
+143 actionable tasks: 3 executed, 140 up-to-date
