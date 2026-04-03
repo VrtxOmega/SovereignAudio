@@ -1,79 +1,46 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Ω Sovereign Audio
+**High-Assurance Secure Offline Audio Platform**
 
-# Getting Started
+> A remote telemetry-linked local audiobook and YouTube hybrid media player running a bifurcated transient-buffer/permanent-vault storage engine. Built symmetrically for Android via React Native and desktop via the VERITAS ecosystem.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+---
 
-## Step 1: Start the Metro Server
+## Architecture Overview
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+Sovereign Audio replaces cloud-based podcast platforms by hosting a self-contained local library synced over `aiohttp` to an active mobile front-end. It emphasizes memory isolation, fault tolerance through severe network conditions, and extreme privacy. 
 
-To start Metro, run the following command from the _root_ of your React Native project:
+### Core Differentiators
+1. **Dual-Tier Storage Isolation (`OfflineBufferService.js`)**
+   - **Transient Buffer**: Self-evicting 4GB cyclic cache for active network streams.
+   - **Persistent Vault**: Protected 32GB offline ledger immune to cleanup daemons.
+2. **Robust Telemetry (`MediaSyncService.js`)**
+   - Complete AbortController implementation for proxy failure (LocalTunnel/Ngrok).
+   - Exponential 3-ping backoffs and flexible heartbeat bounds.
+3. **VERITAS Gold/Black Theme Standard**
+   - Implements `veritas.js` theme tokens across the UX.
+   - Live network states and active hardware-level playhead telemetry.
 
-```bash
-# using npm
-npm start
+## Running Locally
 
-# OR using Yarn
-yarn start
-```
+1. **Start the Sync Daemon** (Desktop Host)
+   ```bash
+   cd backend
+   python media_sync_daemon.py
+   ```
+   > The backend runs an `aiohttp` server on port `5002` handling Range requests and telemetry JSON mapping.
 
-## Step 2: Start your Application
+2. **Launch Android Environment** (Mobile Client)
+   ```bash
+   npx react-native run-android
+   ```
+   > *Note: Modify `MediaSyncService.js` to target your local machine IP or tunneling proxy URL.*
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+## VERITAS Framework Certification
 
-### For Android
+Status: `AUDIT-READY / GAP-CLOSED / NATIVE COMPILATION BOUNDS SECURED`
 
-```bash
-# using npm
-npm run android
+## License
+MIT License. See [LICENSE](LICENSE) for more details. Copyright (c) 2026 VERITAS Omega & RJ Lopez AI.
 
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+---
+*Built with Gravity Omega. "We do not determine what is true. We determine what survives."*
