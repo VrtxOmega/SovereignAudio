@@ -39,7 +39,7 @@ function VideoPlayer({ item, visible, onClose }) {
   const [paused,    setPaused]    = useState(false);
   const [pos,       setPos]       = useState(0);
   const [duration,  setDuration]  = useState(0);
-  const [startPos,  setStartPos]  = useState(0);
+  const resumePos   = useRef(0);
   const saveTimer   = useRef(null);
   const hideTimer   = useRef(null);
   const overlayAnim = useRef(new Animated.Value(1)).current;
@@ -47,14 +47,17 @@ function VideoPlayer({ item, visible, onClose }) {
 
   const HIDE_DELAY = 4000;
 
-  // Reset controls visibility when player opens
+  // Load saved position when player opens
   useEffect(() => {
     if (visible && item) {
       setControlsVisible(true);
       overlayAnim.setValue(1);
       scheduleHide();
       AsyncStorage.getItem(`${POS_KEY_PREFIX}${item.id || item.path}`)
-        .then(v => setStartPos(v ? parseInt(v) / 1000 : (item.lastPositionMs || 0) / 1000));
+        .then(v => {
+          const savedMs = v ? parseInt(v) : (item.lastPositionMs || 0);
+          resumePos.current = savedMs / 1000;
+        });
     }
     return () => clearTimeout(hideTimer.current);
   }, [visible, item]);
@@ -102,6 +105,11 @@ function VideoPlayer({ item, visible, onClose }) {
 
   const onLoad = useCallback(({ duration: d }) => {
     setDuration(d);
+    // Seek to saved position once video is loaded and ready
+    if (resumePos.current > 0) {
+      videoRef.current?.seek(resumePos.current);
+      resumePos.current = 0; // Clear so reloads don't re-seek
+    }
   }, []);
 
   const onEnd = useCallback(async () => {
@@ -137,7 +145,6 @@ function VideoPlayer({ item, visible, onClose }) {
           onProgress={onProgress}
           onLoad={onLoad}
           onEnd={onEnd}
-          seek={startPos}
           bufferConfig={{
             minBufferMs: 15000,
             maxBufferMs: 50000,
