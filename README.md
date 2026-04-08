@@ -1,46 +1,79 @@
-# Ω Sovereign Audio
-**High-Assurance Secure Offline Audio Platform**
+<div align="center">
+  <h1>SOVEREIGN MEDIA MOBILE</h1>
+  <p><strong>Android Companion for Sovereign Media</strong></p>
+  <p><em>Your library. Your pocket. Your sovereignty.</em></p>
+</div>
 
-> A remote telemetry-linked local audiobook and YouTube hybrid media player running a bifurcated transient-buffer/permanent-vault storage engine. Built symmetrically for Android via React Native and desktop via the VERITAS ecosystem.
+![Status](https://img.shields.io/badge/Status-ACTIVE-success?style=for-the-badge&labelColor=000000&color=d4af37)
+![Platform](https://img.shields.io/badge/Platform-Android-brightgreen?style=for-the-badge&labelColor=000000)
+![Stack](https://img.shields.io/badge/Stack-React%20Native-informational?style=for-the-badge&labelColor=000000)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge&labelColor=000000)
 
 ---
 
-## Architecture Overview
+The Android companion to [Sovereign Media](https://github.com/VrtxOmega/SovereignMedia). High-assurance secure offline media platform running a bifurcated transient-buffer/permanent-vault storage engine. Sync your audiobook and media library from desktop to phone — zero cloud, zero subscriptions.
 
-Sovereign Audio replaces cloud-based podcast platforms by hosting a self-contained local library synced over `aiohttp` to an active mobile front-end. It emphasizes memory isolation, fault tolerance through severe network conditions, and extreme privacy. 
+> **Offline-first. Sync over local network. No streaming service required.**
 
-### Core Differentiators
-1. **Dual-Tier Storage Isolation (`OfflineBufferService.js`)**
-   - **Transient Buffer**: Self-evicting 4GB cyclic cache for active network streams.
-   - **Persistent Vault**: Protected 32GB offline ledger immune to cleanup daemons.
-2. **Robust Telemetry (`MediaSyncService.js`)**
-   - Complete AbortController implementation for proxy failure (LocalTunnel/Ngrok).
-   - Exponential 3-ping backoffs and flexible heartbeat bounds.
-3. **VERITAS Gold/Black Theme Standard**
-   - Implements `veritas.js` theme tokens across the UX.
-   - Live network states and active hardware-level playhead telemetry.
+## Architecture
 
-## Running Locally
+`
++---------------------------+          +---------------------------+
+|  SOVEREIGN MEDIA MOBILE   |  <-WS->  |  SOVEREIGN MEDIA (PC)     |
+|  React Native (Android)   |          |  Electron Desktop App     |
++---------------------------+          +---------------------------+
+|  Local Storage Engine     |          |  Media Library + Index    |
+|  Transient Buffer         |          |  Cover Art Pipeline       |
+|  Permanent Vault          |          |  Position Sync            |
++---------------------------+          +---------------------------+
+`
 
-1. **Start the Sync Daemon** (Desktop Host)
-   ```bash
-   cd backend
-   python media_sync_daemon.py
-   ```
-   > The backend runs an `aiohttp` server on port `5002` handling Range requests and telemetry JSON mapping.
+| Component | Purpose |
+|-----------|---------|
+| **React Native Shell** | Native Android UI with VERITAS aesthetics |
+| **Storage Engine** | Bifurcated transient-buffer + permanent-vault for media files |
+| **Sync Bridge** | WebSocket connection to desktop for library synchronization |
+| **Offline Playback** | Full media playback without network connectivity |
+| **Position Sync** | Cross-device position persistence for audiobooks |
 
-2. **Launch Android Environment** (Mobile Client)
-   ```bash
-   npx react-native run-android
-   ```
-   > *Note: Modify `MediaSyncService.js` to target your local machine IP or tunneling proxy URL.*
+## Features
 
-## VERITAS Framework Certification
+- **Offline-First Playback** - All media stored locally on device, no streaming
+- **Library Sync** - One-click sync from desktop Sovereign Media instance
+- **Cover Art Pipeline** - ADB-based cover injection for 2000+ assets
+- **Position Persistence** - Resume playback across phone and desktop
+- **Bifurcated Storage** - Transient buffer for incoming, permanent vault for committed media
+- **VERITAS Aesthetic** - Gold-and-obsidian interface consistent with desktop
 
-Status: `AUDIT-READY / GAP-CLOSED / NATIVE COMPILATION BOUNDS SECURED`
+## Quick Start
+
+### Requirements
+- Android device
+- React Native development environment
+- Desktop Sovereign Media instance
+
+### Install
+
+`ash
+npm install
+
+# Deploy to connected Android device
+npx react-native run-android
+`
+
+### Sync Library
+
+1. Ensure desktop Sovereign Media is running
+2. Open the mobile app
+3. Navigate to Sync settings
+4. Connect to your desktop's local IP
 
 ## License
-MIT License. See [LICENSE](LICENSE) for more details. Copyright (c) 2026 VERITAS Omega & RJ Lopez AI.
+
+MIT
 
 ---
-*Built with Gravity Omega. "We do not determine what is true. We determine what survives."*
+
+<div align="center">
+  <sub>Built by <a href="https://github.com/VrtxOmega">RJ Lopez</a> | VERITAS Framework</sub>
+</div>
