@@ -1,80 +1,69 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/VrtxOmega/Gravity-Omega/master/omega_icon.png" width="100" alt="VERITAS" />
+  <img src="https://raw.githubusercontent.com/VrtxOmega/Gravity-Omega/master/omega_icon.png" width="100" alt="SOVEREIGN MEDIA MOBILE" />
   <h1>SOVEREIGN MEDIA MOBILE</h1>
-  <p><strong>Android Companion for Sovereign Media</strong></p>
-  <p><em>Your library. Your pocket. Your sovereignty.</em></p>
+  <p><strong>Android Companion for Sovereign Media — React Native Offline Media Vault</strong></p>
 </div>
 
-![Status](https://img.shields.io/badge/Status-ACTIVE-success?style=for-the-badge&labelColor=000000&color=d4af37)
+<div align="center">
+
+![Status](https://img.shields.io/badge/Status-ARCHIVED-8B0000?style=for-the-badge&labelColor=000000&color=d4af37)
+![Version](https://img.shields.io/badge/Version-v1.0.0--FINAL-informational?style=for-the-badge&labelColor=000000)
 ![Platform](https://img.shields.io/badge/Platform-Android-brightgreen?style=for-the-badge&labelColor=000000)
 ![Stack](https://img.shields.io/badge/Stack-React%20Native-informational?style=for-the-badge&labelColor=000000)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge&labelColor=000000)
 
+</div>
+
 ---
 
-The Android companion to [Sovereign Media](https://github.com/VrtxOmega/SovereignMedia). High-assurance secure offline media platform running a bifurcated transient-buffer/permanent-vault storage engine. Sync your audiobook and media library from desktop to phone — zero cloud, zero subscriptions.
+> **NOTICE: SovereignMediaMobile has been merged into [SovereignMedia](https://github.com/VrtxOmega/SovereignMedia/tree/main/mobile) as the official mobile companion.**
+> This repository is archived. Future development continues in the parent SovereignMedia repo under the `mobile/` directory.
 
-> **Offline-first. Sync over local network. No streaming service required.**
+---
 
-## Architecture
+## Ecosystem Canon
 
-`
-+---------------------------+          +---------------------------+
-|  SOVEREIGN MEDIA MOBILE   |  <-WS->  |  SOVEREIGN MEDIA (PC)     |
-|  React Native (Android)   |          |  Electron Desktop App     |
-+---------------------------+          +---------------------------+
-|  Local Storage Engine     |          |  Media Library + Index    |
-|  Transient Buffer         |          |  Cover Art Pipeline       |
-|  Permanent Vault          |          |  Position Sync            |
-+---------------------------+          +---------------------------+
-`
+Sovereign Media Mobile was the Android extension of the VERITAS & Sovereign Ecosystem's media management layer — a React Native client that sync'd audiobook and video libraries from the desktop Sovereign Media Electron app via a local WebSocket bridge. It ran a bifurcated storage engine (transient buffer + permanent vault) and was designed for zero-cloud, zero-subscription offline media consumption. The mobile extension has been absorbed into the parent project to unify the deployment surface.
 
-| Component | Purpose |
-|-----------|---------|
-| **React Native Shell** | Native Android UI with VERITAS aesthetics |
-| **Storage Engine** | Bifurcated transient-buffer + permanent-vault for media files |
-| **Sync Bridge** | WebSocket connection to desktop for library synchronization |
-| **Offline Playback** | Full media playback without network connectivity |
-| **Position Sync** | Cross-device position persistence for audiobooks |
+---
 
-## Features
+## What It Was
 
-- **Offline-First Playback** - All media stored locally on device, no streaming
-- **Library Sync** - One-click sync from desktop Sovereign Media instance
-- **Cover Art Pipeline** - ADB-based cover injection for 2000+ assets
-- **Position Persistence** - Resume playback across phone and desktop
-- **Bifurcated Storage** - Transient buffer for incoming, permanent vault for committed media
-- **VERITAS Aesthetic** - Gold-and-obsidian interface consistent with desktop
+An Android media player providing:
 
-## Quick Start
+- Audiobook and eBook library synced from desktop Sovereign Media
+- Local-only storage — no cloud dependency
+- WebSocket-based sync over local network
+- Playback position persistence
+- Offline-first architecture with encrypted persistent vault
 
-### Requirements
-- Android device
-- React Native development environment
-- Desktop Sovereign Media instance
+---
 
-### Install
+## Migration Path
 
-`ash
-npm install
+The full source code and build configuration are now maintained as a `mobile/` subdirectory in [SovereignMedia](https://github.com/VrtxOmega/SovereignMedia/tree/main/mobile).
 
-# Deploy to connected Android device
-npx react-native run-android
-`
+```bash
+git clone https://github.com/VrtxOmega/SovereignMedia.git
+cd SovereignMedia/mobile
+# See README.md in that directory for build instructions
+```
 
-### Sync Library
+---
 
-1. Ensure desktop Sovereign Media is running
-2. Open the mobile app
-3. Navigate to Sync settings
-4. Connect to your desktop's local IP
+## History
+
+- v1.0.0 — Initial Android companion with sync bridge
+- v1.1.0-ARCHIVED — Merged into SovereignMedia `mobile/` subdirectory
+
+---
 
 ## License
 
-MIT
+Released under the [MIT License](LICENSE).
 
 ---
 
 <div align="center">
-  <sub>Built by <a href="https://github.com/VrtxOmega">RJ Lopez</a> | VERITAS Framework</sub>
+  <sub>Archived and maintained by <a href="https://github.com/VrtxOmega">RJ Lopez</a> &nbsp;|&nbsp; VERITAS &amp; Sovereign Ecosystem &mdash; Omega Universe</sub>
 </div>
